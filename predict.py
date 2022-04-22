@@ -1,13 +1,10 @@
-# 参考 : https://qiita.com/everylittle/items/954207b1ae917c25ff96#%E3%83%87%E3%83%BC%E3%82%BF%E9%9B%86%E3%82%81
-
 import sys
-
-# 入力画像
-input_filename = "sample-3500-1.jpg"
-
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
+
+# 入力画像
+input_filename = sys.argv[2]
 
 # 特徴量の設定
 classes = ["keikyu-1000", "meitetsu-3500", "meitetsu-6000"]
@@ -16,7 +13,7 @@ img_width, img_height = 128, 128
 feature_dim = (img_width, img_height, 3)
 
 # 学習モデルの読み込み
-model = tf.keras.models.load_model("train11.hdf5")
+model = tf.keras.models.load_model(sys.argv[1])
 
 # 入力画像の読み込み
 img = image.load_img(input_filename, target_size=(img_height, img_width))

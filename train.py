@@ -1,5 +1,3 @@
-# 参考 : https://qiita.com/everylittle/items/954207b1ae917c25ff96#%E3%83%87%E3%83%BC%E3%82%BF%E9%9B%86%E3%82%81
-
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Input, Flatten, Dropout
 from tensorflow.keras.optimizers import SGD
