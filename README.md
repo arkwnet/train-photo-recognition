@@ -20,6 +20,9 @@ meitetsu-3500      34.7103%
 meitetsu-6000      50.7850%
 ```
 
+`predict_api.py`は Flask を用いた API サーバです。  
+標準出力の代わりに JSON 形式で結果を返します。
+
 ## 参考文献
 
 everylittle. "[TensorFlow] AI を車両鉄に入門させてみた". Qiita. https://qiita.com/everylittle/items/954207b1ae917c25ff96, (参照 2022-02-08)
