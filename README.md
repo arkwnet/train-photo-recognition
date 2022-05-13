@@ -20,8 +20,12 @@ meitetsu-3500      34.7103%
 meitetsu-6000      50.7850%
 ```
 
+## API サーバ (predict_api.py) について
+
 `predict_api.py`は Flask を用いた API サーバです。  
-標準出力の代わりに JSON 形式で結果を返します。
+標準出力の代わりに JSON で結果を返します。  
+Base64 形式の画像を POST で渡すため、実行時に第二引数 (画像ファイルの指定) は不要です。  
+専用のウェブフロントエンドは[こちら](hhttps://github.com/arkwnet/train-photo-recognition-frontend)から取得できます。
 
 ## 参考文献
 
